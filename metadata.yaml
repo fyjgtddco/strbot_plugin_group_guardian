@@ -1,0 +1,10 @@
+name: astrbot_plugin_group_guardian
+desc: 🛡️ 智能群管插件 - AI自动识别吵架/刷屏并警告禁言，支持手动禁言、踢人、全体禁言、白名单管理
+version: 1.0.1
+author: Community
+repo: https://github.com/user/astrbot_plugin_group_guardian
+tags:
+  - 管理
+  - AI
+  - 群管
+  - 安全

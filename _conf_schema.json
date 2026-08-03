@@ -1,0 +1,82 @@
+{
+    "admin_qq": {
+        "type": "text",
+        "description": "管理员QQ号（多个用逗号分隔）",
+        "hint": "例如：123456789,987654321",
+        "default": ""
+    },
+    "whitelist_qq": {
+        "type": "text",
+        "description": "白名单QQ号（多个用逗号分隔，白名单成员免除所有管理操作）",
+        "hint": "例如：123456789,987654321",
+        "default": ""
+    },
+    "ai_conflict_detection": {
+        "type": "bool",
+        "description": "是否启用 AI 冲突检测",
+        "default": true
+    },
+    "ai_auto_warn": {
+        "type": "bool",
+        "description": "检测到冲突时是否主动 @ 双方发出警告",
+        "default": true
+    },
+    "ai_auto_mute_after_warn": {
+        "type": "bool",
+        "description": "警告后继续冲突是否自动禁言",
+        "default": true
+    },
+    "ai_mute_duration": {
+        "type": "int",
+        "description": "自动禁言时长（秒）",
+        "default": 300,
+        "minimum": 10,
+        "maximum": 2592000
+    },
+    "ai_model": {
+        "type": "string",
+        "description": "AI 模型名称（留空使用默认模型）",
+        "hint": "填写你在 AstrBot 中配置的模型名称",
+        "default": ""
+    },
+    "flood_detection": {
+        "type": "bool",
+        "description": "是否启用刷屏检测",
+        "default": true
+    },
+    "flood_threshold": {
+        "type": "int",
+        "description": "刷屏检测时间窗口（秒）",
+        "default": 5,
+        "minimum": 1,
+        "maximum": 30
+    },
+    "flood_max_msgs": {
+        "type": "int",
+        "description": "时间窗口内最大消息数（超过即禁言）",
+        "default": 3,
+        "minimum": 2,
+        "maximum": 20
+    },
+    "flood_mute_duration": {
+        "type": "int",
+        "description": "刷屏禁言时长（秒）",
+        "default": 60,
+        "minimum": 10,
+        "maximum": 86400
+    },
+    "conflict_window": {
+        "type": "int",
+        "description": "AI 分析时取最近多少条消息作为上下文",
+        "default": 10,
+        "minimum": 5,
+        "maximum": 50
+    },
+    "conflict_cooldown": {
+        "type": "int",
+        "description": "AI 分析最小间隔（秒），避免频繁调用",
+        "default": 60,
+        "minimum": 10,
+        "maximum": 600
+    }
+}
